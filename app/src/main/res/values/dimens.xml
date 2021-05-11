@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacer_medium">24</dimen>
+    <dimen name="spacer_xl">48</dimen>
+    <dimen name="spacer_small">12</dimen>
+</resources>
