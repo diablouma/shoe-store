@@ -6,14 +6,14 @@
     app:startDestination="@id/login_destination">
     <fragment
         android:id="@+id/login_destination"
-        android:label="login_fragment"
-        tools:layout="@layout/login_fragment"/>
+        android:name="com.udacity.shoestore.screens.login.LoginFragment"
+        android:label="login_fragment" />
     <fragment
         android:id="@+id/welcome_destination"
-        android:label="welcome_fragment"
-        tools:layout="@layout/welcome_fragment"/>
+        android:name="com.udacity.shoestore.screens.welcome.WelcomeFragment"
+        android:label="welcome_fragment" />
     <fragment
         android:id="@+id/instructions_destination"
-        android:label="instructions_fragment"
-        tools:layout="@layout/instructions_fragment"/>
+        android:name="com.udacity.shoestore.screens.instructions.InstructionsFragment"
+        android:label="instructions_fragment" />
 </navigation>
