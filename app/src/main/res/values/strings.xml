@@ -6,4 +6,7 @@
     <string name="sing_up_label">Sign Up</string>
     <string name="password_hint">Password</string>
     <string name="email_hint">yourEmail@test.com</string>
+    <string name="welcome_title_label">Welcome to the Shoe Store!</string>
+    <string name="welcome_paragraph_text">You will find the better shoes in our store at a really cheap prices! Check it out!</string>
+    <string name="go_to_instructions_button">Instructions</string>
 </resources>
