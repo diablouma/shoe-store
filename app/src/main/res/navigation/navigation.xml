@@ -10,4 +10,7 @@
     <fragment
         android:id="@+id/welcome_destination"
         android:label="welcome_fragment" />
+    <fragment
+        android:id="@+id/instructions_destination"
+        android:label="instructions_fragment" />
 </navigation>

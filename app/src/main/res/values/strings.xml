@@ -9,4 +9,10 @@
     <string name="welcome_title_label">Welcome to the Shoe Store!</string>
     <string name="welcome_paragraph_text">You will find the better shoes in our store at a really cheap prices! Check it out!</string>
     <string name="go_to_instructions_button">Instructions</string>
+    <string name="instructions_title">Instructions</string>
+    <string name="instructions_steps">
+        1) Access to the Shoe List \n\n\n
+        2)Find in the list the Shoes you like the most\n\n\n
+        3)Click on it\n\n\n
+        4)You will its details"</string>
 </resources>
