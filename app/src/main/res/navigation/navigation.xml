@@ -6,11 +6,14 @@
     app:startDestination="@id/login_destination">
     <fragment
         android:id="@+id/login_destination"
-        android:label="login_fragment" />
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment"/>
     <fragment
         android:id="@+id/welcome_destination"
-        android:label="welcome_fragment" />
+        android:label="welcome_fragment"
+        tools:layout="@layout/welcome_fragment"/>
     <fragment
         android:id="@+id/instructions_destination"
-        android:label="instructions_fragment" />
+        android:label="instructions_fragment"
+        tools:layout="@layout/instructions_fragment"/>
 </navigation>
