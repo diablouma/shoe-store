@@ -16,4 +16,9 @@
         3)Click on it\n\n\n
         4)You will its details"</string>
     <string name="go_to_list_text">Go to list</string>
+    <string name="logout_menu_item">Logout</string>
+    <string name="login_screen_title">Login</string>
+    <string name="welcome_screen_label">Welcome</string>
+    <string name="instructions_screen_label">Instructions</string>
+    <string name="shoe_list_screen_label">Available Shoes</string>
 </resources>
