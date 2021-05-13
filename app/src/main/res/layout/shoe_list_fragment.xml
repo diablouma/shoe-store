@@ -17,9 +17,9 @@
             <LinearLayout
                 android:id="@+id/shoe_list_linear_layout"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
-            </LinearLayout>
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/spacer_medium" />
         </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
