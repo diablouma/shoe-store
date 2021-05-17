@@ -6,19 +6,20 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/shoe_name_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/shoe_size_label"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="209dp" />
+        android:hint="@string/shoe_name_hint"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="86dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/shoe_name_label"
-        tools:layout_editor_absoluteX="40dp"
+        android:text="@string/shoe_company_label"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="49dp"
         tools:layout_editor_absoluteY="120dp" />
 
     <TextView
@@ -26,14 +27,51 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/shoe_description_label"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="182dp" />
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="152dp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/shoe_company_edit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/shoe_company_label"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="150dp" />
+        android:hint="@string/shoe_company_hint"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <TextView
+        android:id="@+id/shoe_description_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/shoe_description_hint"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <TextView
+        android:id="@+id/shoe_size_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/shoe_size_hint"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shoe_name_label"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/shoe_size_label"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="179dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
