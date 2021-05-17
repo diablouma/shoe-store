@@ -23,6 +23,10 @@ class ShoeDetailFragment : Fragment() {
             findNavController().navigate(ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoeListFragment())
         }
 
+        binding.saveButton.setOnClickListener {
+            findNavController().navigate(ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoeListFragment())
+        }
+
         return binding.root
     }
 }
