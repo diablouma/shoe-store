@@ -74,4 +74,20 @@
         tools:layout_editor_absoluteX="49dp"
         tools:layout_editor_absoluteY="179dp" />
 
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@android:string/cancel"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_save"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="244dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

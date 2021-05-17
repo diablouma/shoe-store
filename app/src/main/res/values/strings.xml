@@ -31,4 +31,5 @@
     <string name="shoe_company_hint">A company name</string>
     <string name="shoe_description_hint">A description</string>
     <string name="shoe_size_hint">37.5</string>
+    <string name="button_save">Save</string>
 </resources>
