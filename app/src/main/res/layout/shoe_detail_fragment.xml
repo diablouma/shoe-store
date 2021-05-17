@@ -82,8 +82,7 @@
                     android:layout_marginStart="@dimen/spacer_medium"
                     android:ems="10"
                     android:hint="@string/shoe_description_hint"
-                    android:inputType="textPersonName"
-                    android:text="Name" />
+                    android:inputType="textPersonName" />
 
             </TableRow>
 
