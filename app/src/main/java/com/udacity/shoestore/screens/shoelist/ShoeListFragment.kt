@@ -2,12 +2,9 @@ package com.udacity.shoestore.screens.shoelist
 
 import android.os.Bundle
 import android.view.*
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
@@ -17,7 +14,7 @@ import com.udacity.shoestore.databinding.ShoeListFragmentBinding
 
 class ShoeListFragment : Fragment() {
 
-    private lateinit var viewModel: ShoeListViewModel
+    private val viewModel: ShoeListViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -29,10 +26,11 @@ class ShoeListFragment : Fragment() {
 
         setHasOptionsMenu(true)
 
-        viewModel = ViewModelProvider(this).get(ShoeListViewModel::class.java)
         val shoeListLayout = binding.shoeListLinearLayout
 
-        viewModel.shoeList.value?.forEach { shoe ->
+        // this fragment is re-created each time we access back to the list, so will paint
+        // with the updated set of items
+        viewModel.shoeList.value!!.forEach { shoe ->
             val shoeItemWithinListBinding: ShoeItemWithinListBinding = DataBindingUtil.inflate(
                 inflater,
                 R.layout.shoe_item_within_list,

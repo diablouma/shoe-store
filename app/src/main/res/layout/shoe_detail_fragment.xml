@@ -4,8 +4,8 @@
 
     <data>
         <variable
-            name="shoeDetailViewModel"
-            type="com.udacity.shoestore.screens.shoedetail.ShoeDetailViewModel" />
+            name="shoeListViewModel"
+            type="com.udacity.shoestore.screens.shoelist.ShoeListViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -44,7 +44,8 @@
                     android:layout_marginStart="@dimen/spacer_medium"
                     android:ems="10"
                     android:hint="@string/shoe_name_hint"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:text="@={shoeListViewModel.newShoe.name}" />
 
             </TableRow>
 
@@ -66,7 +67,8 @@
                     android:layout_marginStart="@dimen/spacer_medium"
                     android:ems="10"
                     android:hint="@string/shoe_company_hint"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:text="@={shoeListViewModel.newShoe.company}" />
 
             </TableRow>
 
@@ -88,7 +90,8 @@
                     android:layout_marginStart="@dimen/spacer_medium"
                     android:ems="10"
                     android:hint="@string/shoe_description_hint"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:text="@={shoeListViewModel.newShoe.description}" />
 
             </TableRow>
 
@@ -110,7 +113,8 @@
                     android:layout_marginStart="@dimen/spacer_medium"
                     android:ems="10"
                     android:hint="@string/shoe_size_hint"
-                    android:inputType="numberDecimal" />
+                    android:inputType="numberDecimal"
+                    android:text="@={`` + shoeListViewModel.newShoe.size}" />
 
             </TableRow>
         </TableLayout>
@@ -132,6 +136,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_save"
+            android:onClick="@{() -> shoeListViewModel.onSaveShoeEvent()}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.17"

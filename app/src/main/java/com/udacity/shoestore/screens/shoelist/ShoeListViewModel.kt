@@ -1,17 +1,29 @@
 package com.udacity.shoestore.screens.shoelist
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.udacity.shoestore.models.Shoe
 
 class ShoeListViewModel : ViewModel() {
-    private var _shoeList = MutableLiveData<List<Shoe>>()
-    val shoeList: LiveData<List<Shoe>>
+    private var _shoeList = MutableLiveData<MutableList<Shoe>>()
+    val shoeList: LiveData<MutableList<Shoe>>
         get() = _shoeList
 
+    private var _newShoe = MutableLiveData<Shoe>()
+    val newShoe: LiveData<Shoe>
+        get() = _newShoe
+
+    private var _shoeSaved = MutableLiveData<Boolean>()
+    val shoeSaved: LiveData<Boolean>
+        get() = _shoeSaved
+
     init {
-        _shoeList.value = listOf(
+        _shoeSaved.value = false
+        _newShoe.value = Shoe("", 0.0, "", "", mutableListOf())
+
+        _shoeList.value = mutableListOf(
             Shoe(
                 name = "Red high heels",
                 size = 32.0,
@@ -55,5 +67,18 @@ class ShoeListViewModel : ViewModel() {
                 images = listOf("image1.png")
             )
         )
+    }
+
+    fun onSaveShoeEvent() {
+        _shoeSaved.value = true
+    }
+
+    fun addShoe(newShoe: Shoe) {
+        _shoeList.value!!.add(newShoe)
+    }
+
+    fun onSaveShoeEventComplete() {
+        _newShoe.value = Shoe("", 0.0, "", "", mutableListOf())
+        _shoeSaved.value = false
     }
 }
