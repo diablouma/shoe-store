@@ -3,6 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- This type of layout helps a lot to position the floating button in the screen
+        based on constraints instead of fixed values for margins -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/shoe_list_layout"
         android:layout_width="match_parent"

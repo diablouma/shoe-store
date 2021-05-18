@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- To avoid to much nesting that I have previously with the Linear Layou-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/shoe_item_layout"
         android:layout_width="match_parent"

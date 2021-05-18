@@ -8,6 +8,8 @@
             type="com.udacity.shoestore.ShoeListViewModel" />
     </data>
 
+    <!-- To make the form and the buttons appear in a consistent way
+        in the center of the screen-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
