@@ -1,7 +1,6 @@
 package com.udacity.shoestore.screens.shoedetail
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,7 +13,7 @@ import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.ShoeDetailFragmentBinding
-import com.udacity.shoestore.screens.shoelist.ShoeListViewModel
+import com.udacity.shoestore.ShoeListViewModel
 
 class ShoeDetailFragment : Fragment() {
     private val viewModel: ShoeListViewModel by activityViewModels()

@@ -1,4 +1,4 @@
-package com.udacity.shoestore.screens.shoelist
+package com.udacity.shoestore
 
 import android.util.Log
 import androidx.lifecycle.LiveData

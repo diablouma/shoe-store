@@ -9,6 +9,7 @@ import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.udacity.shoestore.R
+import com.udacity.shoestore.ShoeListViewModel
 import com.udacity.shoestore.databinding.ShoeItemWithinListBinding
 import com.udacity.shoestore.databinding.ShoeListFragmentBinding
 
