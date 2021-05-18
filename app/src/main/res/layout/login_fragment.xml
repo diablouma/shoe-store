@@ -67,12 +67,14 @@
 
         <Button
             android:id="@+id/sign_up_button"
+            style="@style/Widget.MaterialComponents.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/spacer_medium"
             android:layout_marginEnd="@dimen/spacer_medium"
             android:layout_marginBottom="24dp"
             android:text="@string/sing_up_label"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -81,12 +83,14 @@
 
         <Button
             android:id="@+id/sign_in_button"
+            style="@style/Widget.MaterialComponents.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/spacer_medium"
             android:layout_marginTop="@dimen/spacer_medium"
             android:layout_marginEnd="@dimen/spacer_medium"
             android:text="@string/sign_in_label"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
