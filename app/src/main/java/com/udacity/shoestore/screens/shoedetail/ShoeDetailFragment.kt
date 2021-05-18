@@ -29,6 +29,7 @@ class ShoeDetailFragment : Fragment() {
         binding.shoeListViewModel = viewModel
 
         binding.cancelButton.setOnClickListener {
+            hideKeyboard()
             findNavController().navigate(ShoeDetailFragmentDirections.actionShoeDetailFragmentToShoeListFragment())
         }
 
